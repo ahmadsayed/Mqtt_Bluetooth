@@ -23,7 +23,7 @@ void setup() {
   
 
 }
-void callback(String topic, String payload) {'
+void callback(String topic, String payload) {
   if (topic == "helloout") digitalWrite(13, HIGH);
   if (topic == "helloout2") digitalWrite(13, LOW);
   Serial.println(topic + " : " + payload);
